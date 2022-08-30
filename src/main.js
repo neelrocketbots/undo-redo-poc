@@ -5,6 +5,9 @@ import store from '@/store'
 import router from '@/router'
 
 Vue.config.productionTip = false
+store.subscribe(async (mutation) => {
+    console.log(mutation)
+})
 
 new Vue({
     router,
